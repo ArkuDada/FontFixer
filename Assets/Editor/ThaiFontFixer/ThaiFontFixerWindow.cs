@@ -1,9 +1,26 @@
+/*
+ * ThaiFontFixerWindow.cs
+ *
+ * This file defines the `ThaiFontFixerWindow` class, which provides a Unity Editor window for managing and fixing Thai font glyphs.
+ * It includes functionality for loading font assets, managing glyph combinations, and saving/loading configurations.
+ *
+ * Classes:
+ * - `ThaiFontFixerWindow`: Represents the main editor window for managing Thai font glyph adjustments.
+ *
+ * Author: Pada Cherdchoothai
+ * Created: 2023-10-06
+ *
+ * Usage:
+ * - Open the window via the Unity menu: `Window > Thai Font Fixer`.
+ * - Use the interface to load a font asset, adjust glyph combinations, and save/load presets.
+ * - Use the "Fix Glyphs" button to apply adjustments to the selected font asset.
+ */
+
 using System;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEditor;
-using UnityEditor.PackageManager;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.Events;
@@ -346,7 +363,7 @@ namespace Editor.ThaiFontFixer
             ThaiFontFixerCacheData cache = JsonUtility.FromJson<ThaiFontFixerCacheData>(jsonString);
 
             m_FontAsset =
-                AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(AssetDatabase.GUIDToAssetPath(cache.fontAssetGUID));
+                AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(AssetDatabase.GUIDToAssetPath(cache.fontAssetGuid));
             if(m_FontAsset != null)
             {
                 m_FontAssetField.value = m_FontAsset;
@@ -364,7 +381,7 @@ namespace Editor.ThaiFontFixer
 
             ThaiFontFixerCacheData data = new ThaiFontFixerCacheData()
             {
-                fontAssetGUID = guid,
+                fontAssetGuid = guid,
                 language = m_Language
             };
 

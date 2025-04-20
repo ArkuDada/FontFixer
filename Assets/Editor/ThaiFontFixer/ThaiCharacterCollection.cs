@@ -1,3 +1,22 @@
+/*
+ * ThaiCharacterCollection.cs
+ *
+ * This file defines the `ThaiCharacterCollection` class, which provides utilities for managing and categorizing Thai characters.
+ * It includes methods for retrieving displayed strings, grouping Thai glyphs by type, and accessing specific character sets.
+ *
+ * Enumerations:
+ * - `ThaiGlyphTypeEnum`: Represents different types of Thai glyphs (e.g., consonants, vowels, tone marks).
+ * - `ThaiGlyphLanguage`: Represents supported languages for glyph group names (Thai or English).
+ *
+ * Author: Pada Cherdchoothai
+ * Created: 2023-10-06
+ *
+ * Usage:
+ * - Use `GetDisplayedString` to format Thai characters for display.
+ * - Use `GetThaiGlyphGroupName` to retrieve the name of a glyph group in Thai or English.
+ * - Use `GetGlyphs` to retrieve character arrays for specific glyph types.
+ */
+
 using System;
 using System.Linq;
 

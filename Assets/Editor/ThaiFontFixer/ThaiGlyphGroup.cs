@@ -1,4 +1,20 @@
-﻿using System;
+﻿/*
+ThaiGlyphGroup.cs
+
+This file defines the ThaiGlyphGroup and ThaiGlyphGroupPair classes, which are used to manage and represent groups of Thai glyphs.
+It includes functionality for grouping glyphs, calculating offsets, and generating formal names for glyph pairs.
+
+Classes:
+ThaiGlyphGroup: Represents a group of Thai glyphs with associated metadata such as type and placement offsets.
+ThaiGlyphGroupPair: Represents a pair of ThaiGlyphGroup objects and provides methods for retrieving their combined names and counts.
+
+Author: Pada Cherdchoothai
+Created: 2023-10-06
+
+Usage:
+Use ThaiGlyphGroup to define and manage individual glyph groups.
+Use ThaiGlyphGroupPair to combine two glyph groups and retrieve their formal names or counts. */
+using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -74,9 +90,11 @@ namespace Editor.ThaiFontFixer
                 return "[ " + string.Join(", ", displayedChars) + " ]";
             }
         }
-
+        
         public ThaiGlyphGroup()
         {
+            this.offset = Vector2.zero;
+            SetGroup(ThaiGlyphTypeEnum.None);
         }
         
         public ThaiGlyphGroup(ThaiGlyphTypeEnum typeEnum , Vector2 offset)
