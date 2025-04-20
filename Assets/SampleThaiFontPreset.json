@@ -1,0 +1,72 @@
+{
+  "glyphGroupPairs": [
+    {
+      "IsEnabled": true,
+      "Left": {
+        "typeEnum": 2,
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "Right": {
+        "typeEnum": 10,
+        "offset": {
+          "x": 0.0,
+          "y": -20.0
+        }
+      }
+    },
+    {
+      "IsEnabled": true,
+      "Left": {
+        "typeEnum": 1,
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "Right": {
+        "typeEnum": 3,
+        "offset": {
+          "x": -20.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "IsEnabled": true,
+      "Left": {
+        "typeEnum": 4,
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "Right": {
+        "typeEnum": 3,
+        "offset": {
+          "x": 0.0,
+          "y": 20.0
+        }
+      }
+    },
+    {
+      "IsEnabled": true,
+      "Left": {
+        "typeEnum": 3,
+        "offset": {
+          "x": 0.0,
+          "y": 20.0
+        }
+      },
+      "Right": {
+        "typeEnum": 9,
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Resources/ThaiFontFixer/ThaiFontFixerStyle.uss?fileID=7433441132597879392&amp;guid=6ebaeb2ea37d2e54dacea34b06f3b7a8&amp;type=3#ThaiFontFixerStyle" />
+    <ui:ScrollView>
+        <ui:Label tabindex="-1" text="Thai Font Fixer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="title" style="justify-content: center; margin-top: 2px;" />
+        <ui:Foldout text="Modify Font Asset" name="ModifyFontAssetFoldoutGroup">
+            <uie:ObjectField label="Font Asset Field" type="TMPro.TMP_FontAsset, Unity.TextMeshPro" name="font-asset-field" style="opacity: 1;" />
+            <ui:Button text="Reset All Combination" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reset-button" style="flex-grow: 0;" />
+            <ui:Button text="Add New Combination" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-combination-button" style="flex-grow: 0;" />
+            <ui:ListView name="combination-list-view" style="background-color: rgba(0, 0, 0, 0);" />
+            <ui:Button text="Fix Glyph" parse-escape-sequences="true" display-tooltip-when-elided="true" name="fix-glyph-button" class="yellow" />
+        </ui:Foldout>
+        <ui:Foldout text="Preset" name="preset-foldout">
+            <uie:ObjectField label="Preset (JSON)" name="json-field" type="UnityEngine.TextAsset, UnityEngine.CoreModule" />
+            <ui:Button text="Load Preset" parse-escape-sequences="true" display-tooltip-when-elided="true" name="load-preset-button" />
+            <ui:Button text="Extract Preset" parse-escape-sequences="true" display-tooltip-when-elided="true" name="extract-preset-button" />
+        </ui:Foldout>
+        <ui:Foldout text="Setting">
+            <ui:EnumField label="Language" type="ThaiGlyphLanguage, Assembly-CSharp-Editor" value="English" name="lang-setting" />
+        </ui:Foldout>
+    </ui:ScrollView>
+</ui:UXML>

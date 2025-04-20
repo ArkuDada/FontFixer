@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Resources/ThaiFontFixer/ThaiGlyphCombinator.uss?fileID=7433441132597879392&amp;guid=7833a1245e9ee8648a951ae208f779bf&amp;type=3#ThaiGlyphCombinator" />
+    <ui:Foldout text="Name" name="combination-label" style="font-size: 24px; -unity-font-style: bold; color: rgb(0, 138, 255); background-color: rgb(0, 0, 0);">
+        <ui:Toggle label="Set Active" name="combination-toggle" style="width: auto; flex-basis: auto; flex-shrink: 0; align-items: center; align-self: auto; justify-content: flex-start;">
+            <ui:Button text="Remove" parse-escape-sequences="true" display-tooltip-when-elided="true" name="remove-button" style="flex-basis: auto; flex-direction: column; align-items: auto; width: 30%; -unity-text-align: middle-center; flex-wrap: nowrap; flex-grow: 0; color: rgb(223, 129, 0);" />
+        </ui:Toggle>
+        <ui:VisualElement name="left-group" class="group contentText">
+            <ui:Label tabindex="-1" text="Left" parse-escape-sequences="true" display-tooltip-when-elided="true" name="left" class="contentText" />
+            <ui:Vector2Field label="Offset&#10;" name="left-offset" />
+            <ui:EnumField label="Type" type="ThaiGlyphTypeEnum, Assembly-CSharp-Editor" value="AllConsonants" name="left-glyph-selector" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="left-preview" class="orange preview-lable" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-group" class="group contentText">
+            <ui:Label tabindex="-1" text="Right" parse-escape-sequences="true" display-tooltip-when-elided="true" name="right" />
+            <ui:Vector2Field label="Offset&#10;" name="right-offset" />
+            <ui:EnumField label="Type" type="ThaiGlyphTypeEnum, Assembly-CSharp-Editor" value="AllConsonants" name="right-glyph-selector" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="right-preview" class="contentText orange preview-lable" />
+        </ui:VisualElement>
+    </ui:Foldout>
+</ui:UXML>

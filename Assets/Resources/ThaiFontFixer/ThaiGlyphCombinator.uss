@@ -1,0 +1,43 @@
+.IntField {
+    width: 50%;
+    align-items: auto;
+    transform-origin: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    position: relative;
+}
+
+.group {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+.contentText {
+    font-size: 14px;
+    -unity-font-style: normal;
+    color: rgb(17, 17, 17);
+    background-color: rgb(56, 56, 56);
+}
+
+.preview-lable {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(217, 126, 0);
+    font-size: 20px;
+    -unity-font-style: bold;
+    padding-top: 12px;
+    padding-right: 2px;
+    padding-bottom: 12px;
+    padding-left: 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}

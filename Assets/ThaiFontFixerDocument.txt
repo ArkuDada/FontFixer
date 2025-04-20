@@ -1,0 +1,59 @@
+﻿Tool: Thai Font Fixer
+
+Tool Concept
+Unity does not support Thai font rendering out of the box.
+This tool is a workaround to fix the issue.
+It will replace the default font with a custom font that supports Thai characters.
+The tool will also replace the existing thai font in the TextMeshPro component with the custom font.
+The tool will allow user to make custom rules like which type of glyph will be affected by the change and offset of the change.
+The custom rule can be save/load as a preset (JSON).
+
+This tool will work in 2 ways
+[Deprecated] 1. Hotfix: apply change to selected / all TextMeshPro component
+2. Permanent: apply change to Font Asset in the project
+
+------------------------------------------------------------------------------------------------------------------------
+
+Accessing the Tools
+    Window -> Thai Font Fixer
+    
+Tool Features
+    - On start up, the tool will check if TextMeshPro is imported, if not show a button to import TMPro
+    - Select Font to add rules
+        - Add Rule
+            - Select Glyph
+            - Select Offset
+        - Toggle Rule
+        - Remove Rule
+        - Reset Rules
+     - Save / Load Rule Preset across font (JSON)
+     - Localize (Thai, English)
+      
+
+------------------------------------------------------------------------------------------------------------------------
+
+Preliminary Project Plan
+
+Weekly Goal
+P1M1 : Create Editor Window , Hotfix Feature
+P1M2 : Permanent Feature , Save/Load Preset
+P1M3 : Ease of use / User Friendly UI
+
+------------------------------------------------------------------------------------------------------------------------
+
+P2M1 : Create Editor Window , Hotfix Feature
+
+P2M2 :
+- Add Permanent Change to Font file by adjusting the Font Asset's glyph adjustment table,
+- Remove Hotfix feature because it is no longer needed (since the font file has been changed)
+- Data Persistence (Save Editor State, Save Adjustment made to Font Asset)
+- Add Save/Load Preset Feature
+- Add Reset Button to reset all rules
+
+P2M3 :
+- Add toggle to enable/disable the certain rule
+- Add Remove Button to remove certain rule
+- Add Language Support (Thai, English)
+- Add check to if TMPro is Imported, if not show button to import TMPro
+
+

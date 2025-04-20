@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Resources/ThaiFontFixer/ThaiFontFixerStyle.uss?fileID=7433441132597879392&amp;guid=6ebaeb2ea37d2e54dacea34b06f3b7a8&amp;type=3#ThaiFontFixerStyle" />
+    <ui:Label tabindex="-1" text="Thai Font Fixer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" class="title" style="justify-content: center; margin-top: 2px;" />
+    <ui:Label tabindex="-1" text="TMPro Package not Imported!!!" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(242, 0, 0); -unity-font-style: bold; -unity-text-align: upper-center;" />
+    <ui:Button text="Import TMPro Essentials" parse-escape-sequences="true" display-tooltip-when-elided="true" name="import-button" />
+</ui:UXML>
